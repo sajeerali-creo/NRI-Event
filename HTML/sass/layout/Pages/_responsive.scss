@@ -1,0 +1,413 @@
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+	footer{
+		.f-logo{
+			width: 100%;
+		}
+		.f-content{
+			width: 100%;
+		}
+		.links{
+			margin-left:0px;
+		}
+		h2{
+			padding-left:0px;
+		}
+		ul{
+			margin-left: 0px;
+		}
+		.newsl {
+			width: 94%;
+			input{
+				margin-left: 0px;
+				width: 94%;
+			}
+			button{
+				right: 0px;
+			}
+		}
+	}
+	.service{
+		.s-box{
+			margin-top: -15px;
+			.box-service{
+				width: 50%;
+			}
+		}
+	}
+	.banner{
+		height: auto;
+		padding-bottom:30px;
+		p{
+			width: 100%;
+		}
+		.m-nu{
+			display: none;
+		}
+	}
+	.each-padd{
+		padding:0px 0px;
+	}
+	.upcoming-pro{
+		.content{
+			h2{
+				padding-top:0px;
+				display: inline-block;
+				strong{
+					font-size: 25px;
+					display: inline-block;
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	header{
+		height: 70px;
+		padding:0px 20px;
+		i{
+			text-align: left;
+			line-height: 70px;
+			img{
+				display: block;
+				height: 50px;
+				width: auto;
+				float: left;
+				margin-top: 10px;
+			}
+		}
+		.button-collapse{
+			display: block;
+			float: right;
+			font-size: 25px;
+			line-height: 70px;
+			span{
+				color: #333;
+				font-size: 35px;
+			}
+		}
+	}
+	.team{
+		.team-head{
+			width: 80px;
+			height: 80px;
+			float: none;
+			margin-bottom: 10px;
+		}
+	}
+	.team-detail{
+		width: 100%!important;
+	}
+	.team-head:after {
+		/* position: absolute; */
+		font-size: 40px;
+		color: #e1e1e1;
+		/* top: 15%; */
+		/* left: 20%; */
+		margin: 28px;
+		/* z-index: 0; */
+		line-height: 80px;
+	}
+	.upcoming-pro{
+		.m6{
+			height: 180px;
+			margin-bottom: 5px;
+			h2{
+				padding-top:20px!important;
+			}
+		}
+
+	}
+	.m-nu{
+		display: none;
+	}
+	.inner{
+		height: 160px;
+	}
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+	footer{
+		.f-logo{
+			width: 100%;
+		}
+		.f-content{
+			width: 100%;
+		}
+		.links{
+			margin-left:0px;
+		}
+		h2{
+			padding-left:0px;
+		}
+		ul{
+			margin-left: 0px;
+		}
+		.newsl {
+			width: 94%;
+			input{
+				margin-left: 0px;
+				width: 94%;
+			}
+			button{
+				right: 0px;
+			}
+		}
+	}
+	.service{
+		.s-box{
+			margin-top: -15px;
+			.box-service{
+				width: 100%;
+			}
+		}
+	}
+	.banner{
+		height: auto;
+		padding-bottom:30px;
+		p{
+			width: 100%;
+		}
+		.m-nu{
+			display: none;
+		}
+	}
+	.each-padd{
+		padding:0px 0px;
+	}
+	.upcoming-pro{
+		.content{
+			h2{
+				padding-top:0px;
+				display: inline-block;
+				strong{
+					font-size: 25px;
+					display: inline-block;
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	header{
+		height: 70px;
+		padding:0px 20px;
+		i{
+			text-align: left;
+			line-height: 70px;
+			img{
+				display: block;
+				height: 50px;
+				width: auto;
+				float: left;
+				margin-top: 10px;
+			}
+		}
+		.button-collapse{
+			display: block;
+			float: right;
+			font-size: 25px;
+			line-height: 70px;
+			span{
+				color: #333;
+				font-size: 35px;
+			}
+		}
+	}
+	.team{
+		.team-head{
+			width: 80px;
+			height: 80px;
+			float: none;
+			margin-bottom: 10px;
+		}
+	}
+	.team-detail{
+		width: 100%!important;
+	}
+	.team-head:after {
+		/* position: absolute; */
+		font-size: 40px;
+		color: #e1e1e1;
+		/* top: 15%; */
+		/* left: 20%; */
+		margin: 28px;
+		/* z-index: 0; */
+		line-height: 80px;
+	}
+	.upcoming-pro{
+		.m6{
+			height: 180px;
+			margin-bottom: 5px;
+			h2{
+				padding-top:20px!important;
+			}
+		}
+
+	}
+	.padding-left{
+		padding:0 0.75rem!important;
+	}
+	.m-nu{
+		display: none;
+	}
+	.inner{
+		height: 160px;
+	}
+	.p-box{
+		height: 180px;
+		h2{
+			padding-top: 20px!important;
+		}
+		
+	}
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+	footer{
+		.f-logo{
+			width: 100%;
+		}
+		.f-content{
+			width: 100%;
+		}
+		.links{
+			margin-left:0px;
+		}
+		h2{
+			padding-left:0px;
+		}
+		ul{
+			margin-left: 0px;
+		}
+		.newsl {
+			width: 94%;
+			input{
+				margin-left: 0px;
+				width: 94%;
+			}
+			button{
+				right: 0px;
+			}
+		}
+	}
+	.service{
+		.s-box{
+			margin-top: -15px;
+			.box-service{
+				width: 100%;
+			}
+		}
+	}
+	.banner{
+		height: auto;
+		padding-bottom:30px;
+		p{
+			width: 100%;
+		}
+		.m-nu{
+			display: none;
+		}
+	}
+	.each-padd{
+		padding:0px 0px;
+	}
+	.upcoming-pro{
+		.content{
+			h2{
+				padding-top:0px;
+				display: inline-block;
+				strong{
+					font-size: 25px;
+					display: inline-block;
+				}
+				br{
+					display: none;
+				}
+			}
+		}
+	}
+	header{
+		height: 70px;
+		padding:0px 20px;
+		i{
+			text-align: left;
+			line-height: 70px;
+			img{
+				display: block;
+				height: 50px;
+				width: auto;
+				float: left;
+				margin-top: 10px;
+			}
+		}
+		.button-collapse{
+			display: block;
+			float: right;
+			font-size: 25px;
+			line-height: 70px;
+			span{
+				color: #333;
+				font-size: 35px;
+			}
+		}
+	}
+	.team{
+		.team-head{
+			width: 80px;
+			height: 80px;
+			float: none;
+			margin-bottom: 10px;
+		}
+	}
+	.team-detail{
+		width: 100%!important;
+	}
+	.team-head:after {
+		/* position: absolute; */
+		font-size: 40px;
+		color: #e1e1e1;
+		/* top: 15%; */
+		/* left: 20%; */
+		margin: 28px;
+		/* z-index: 0; */
+		line-height: 80px;
+	}
+	.upcoming-pro{
+		.m6{
+			height: 180px;
+			margin-bottom: 5px;
+			h2{
+				padding-top:20px!important;
+			}
+		}
+
+	}
+	.padding-left{
+		padding:0 0.75rem!important;
+	}
+	.inner{
+		height: 160px;
+	}
+	.p-box{
+		height: 180px;
+		h2{
+			padding-top: 20px!important;
+		}
+	}
+
+}

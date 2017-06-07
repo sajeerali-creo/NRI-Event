@@ -1,0 +1,336 @@
+// Banner
+.banner{
+	height:650px;
+	background-image:url(../images/banner.jpg);
+	background-attachment:fixed;
+	background-size:cover;
+	text-align:center;
+	background-color:#000;
+	h1{
+		font-size: 30px;
+		color: #fff;
+		text-align: center;
+		margin-top: 8%;
+		display: block;
+		margin-bottom: 20px;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	p{
+		font-size: 13px;
+		color: rgba(255, 255, 255, 0.5);
+		text-align: center;
+		display: block;
+		width: 80%;
+		margin: 0px auto;
+		line-height: 20px;
+		overflow: hidden;
+	    display: -webkit-box;
+	    -webkit-line-clamp: 6;
+	    -webkit-box-orient: vertical;
+	}
+	button{
+		height: 40px;
+		background-color:#E71D36;
+		text-align: center;
+		color: #fff;
+		border: none;
+		border-radius:35px;
+		-webkit-border-radius:35px;
+		-moz-border-radius:35px;
+		width: 150px;
+		margin-top: 30px;
+		transition: all 0.5s ease;
+		a{
+			color: #fff;
+			text-align: center;
+			display: block;
+			font-weight: 600;
+		}
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	ul{
+		float: right;
+		padding: 30px 0px;
+		li{
+			display:block;
+			float: left;
+			padding-left:20px;
+			transition: all 0.5s ease;
+			a{
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 13px;
+				transition: all 0.5s ease;
+				font-weight: 600;
+			}
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+	}
+}
+
+// service
+.service{
+	position:relative;
+	height:auto;;
+	.s-box{
+		width: 100%;
+		height: auto;
+		margin-top: -140px;
+		.box-service{
+			width: 33.33%;
+			float: left;
+			height: 160px;
+			padding:15px;
+			transition: all 0.5s ease;
+			&:hover{
+				background-color:#E71D36;
+				p{
+					color: #fff!important;
+				}
+			}
+			.circle{
+				width: 45px;
+				height: 45px;
+				border-radius:160px;
+				-moz-border-radius:160px;
+				-webkit-border-radius:160px;
+				border:1px solid #fff;
+				text-align: center;
+				line-height: 42px;
+				color: #fff;
+				font-size: 20px;
+				float: left;
+				margin-right: 10px;
+			}
+			.text{
+				width: calc(100% - 55px);
+				float: left;
+				h2{
+					font-size: 18px;
+					font-weight: 400;
+					color: #fff;
+					padding-bottom:10px;
+					margin-top: 10px;
+				}
+				p{
+					line-height: 20px;
+					color: #999;
+					font-size: 13px;
+					overflow: hidden;
+				    display: -webkit-box;
+				    -webkit-line-clamp: 3;
+				    -webkit-box-orient: vertical;
+				}
+			}
+		}
+	}
+}
+
+// upcoming-pro
+.upcoming-pro{
+	.content{
+		padding:20px;
+		h2{
+			font-size: 25px;
+			font-weight: 400;
+			color:#333;
+			display: block;
+			padding-bottom:30px;
+			padding-top:60px;
+			strong{
+				color: #333;
+				font-weight: bold;
+				font-size: 45px;
+			}
+		}
+		p{
+			font-size: 14px;
+			color: #999;
+			text-align: left;
+			line-height: 20px;
+		}
+		button{
+			height: 40px;
+			background-color:#fff;
+			text-align: center;
+			color: #E71D36;
+			border: none;
+			border-radius:35px;
+			-webkit-border-radius:35px;
+			-moz-border-radius:35px;
+			width: 150px;
+			margin-top: 30px;
+			transition: all 0.5s ease;
+			border:2px solid #333;
+			a{
+				color: #333;
+				text-align: center;
+				display: block;
+				font-weight: 600;
+			}
+			&:hover{
+				background-color:#E71D36;
+				color: #fff;
+				border:2px solid #E71D36;
+				a{
+					color: #fff;
+				}
+			}
+		}
+	}
+	.m6{
+		background-color:#fff;
+		height: 250px;
+		overflow: hidden;
+		padding:0px!important;
+		position:relative;
+		.over{
+			width: 100%;
+			height: 100%;
+			position:absolute;
+			z-index: 666;
+			padding:20px;
+			transition: all 0.5s ease;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+99&0+0,0.65+100 */
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+57 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 57%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 57%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+			
+			&:hover{
+				background-color:rgba(231, 29, 54, 0.61);
+				cursor: pointer;
+			}
+		}
+		img{
+			min-width: 100%;
+			object-fit: cover;
+		}
+		.text-box{
+			position:absolute;
+			bottom:20px;
+			h2{
+				color: #fff;
+				font-size: 16px;
+				padding-bottom:5px;
+				font-weight: 600;
+			}
+			span{
+				color: rgba(255, 255, 255, 0.61);
+				font-size: 13px;
+				padding-top:5px;
+				display: block;
+			}
+		}
+	}
+}
+
+ // team
+.team{
+	h2{
+		font-size: 25px;
+		color: #333;
+		display: block;
+		padding-bottom:30px;
+		strong{
+			font-size: 25px;
+			color: #333;
+			font-weight: bold;
+		}
+
+	}
+	.team-head{
+		width: 150px;
+		height: 140px;
+		float: left;
+		background-color:#f9f9f9;
+		margin-right: 10px;
+		position: relative;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.team-detail{
+		width: calc(100% - 160px);
+		float: left;
+		h3{
+			font-size: 16px;
+			font-weight: bold;
+			color: #333;
+			text-align: left;
+		}
+		span{
+			color: #666;
+			font-size: 13px;
+			display: block;
+			padding-top:5px;
+		}
+		p{
+			font-size: 13px;
+			color: #999;
+			display: block;
+			padding-top:15px;
+			line-height: 20px;
+			
+		}
+	}
+	button{
+			height: 40px;
+			background-color:#fff;
+			text-align: center;
+			color: #E71D36;
+			border: none;
+			border-radius:35px;
+			-webkit-border-radius:35px;
+			-moz-border-radius:35px;
+			width: 150px;
+			margin-top: 30px;
+			transition: all 0.5s ease;
+			border:2px solid #333;
+			a{
+				color: #333;
+				text-align: center;
+				display: block;
+				font-weight: 600;
+			}
+			&:hover{
+				background-color:#E71D36;
+				color: #fff;
+				border:2px solid #E71D36;
+				a{
+					color: #fff;
+				}
+			}
+		}
+}
+
+.team-head:after {
+  content: "\f207";
+	font-family: Material-Design-Iconic-Font;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	/* position: absolute; */
+	font-size: 40px;
+	color: #e1e1e1;
+	/* top: 15%; */
+	/* left: 20%; */
+	margin: 64px;
+	/* z-index: 0; */
+	line-height: 150px;
+}
+
+.dark{
+	background-color:#333333;
+}
+.light{
+	background-color:#505050;
+}

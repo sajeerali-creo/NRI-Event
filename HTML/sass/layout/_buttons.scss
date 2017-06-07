@@ -1,0 +1,27 @@
+.bt-normal{
+	height: 40px;
+	background-color:#fff;
+	text-align: center;
+	color: #E71D36;
+	border: none;
+	border-radius:35px;
+	-webkit-border-radius:35px;
+	-moz-border-radius:35px;
+	width: 150px;
+	transition: all 0.5s ease;
+	border:2px solid #333;
+	a{
+		color: #333;
+		text-align: center;
+		display: block;
+		font-weight: 600;
+	}
+	&:hover{
+		background-color:#E71D36;
+		color: #fff;
+		border:2px solid #E71D36;
+		a{
+			color: #fff;
+		}
+	}
+}
