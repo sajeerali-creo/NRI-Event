@@ -74,29 +74,19 @@
 		}
 	}
 	header{
-		height: 70px;
+		height: auto;
 		padding:0px 20px;
+		padding:15px 0px;
 		i{
-			text-align: left;
-			line-height: 70px;
+			text-align: center;
 			img{
 				display: block;
-				height: 50px;
+				height: 85px;
 				width: auto;
-				float: left;
 				margin-top: 10px;
 			}
 		}
-		.button-collapse{
-			display: block;
-			float: right;
-			font-size: 25px;
-			line-height: 70px;
-			span{
-				color: #333;
-				font-size: 35px;
-			}
-		}
+		
 	}
 	.team{
 		.team-head{
@@ -134,6 +124,15 @@
 	}
 	.inner{
 		height: 160px;
+	}
+	.button-collapse{
+		display: block;
+		font-size: 25px;
+		line-height: 70px;
+		span{
+			color: #fff;
+			font-size: 35px;
+		}
 	}
 }
 
@@ -203,29 +202,18 @@
 		}
 	}
 	header{
-		height: 70px;
-		padding:0px 20px;
+		height: auto;
+		padding:15px 0px;
 		i{
-			text-align: left;
-			line-height: 70px;
+			text-align: center;
 			img{
 				display: block;
-				height: 50px;
+				height: 85px;
 				width: auto;
-				float: left;
 				margin-top: 10px;
 			}
 		}
-		.button-collapse{
-			display: block;
-			float: right;
-			font-size: 25px;
-			line-height: 70px;
-			span{
-				color: #333;
-				font-size: 35px;
-			}
-		}
+		
 	}
 	.team{
 		.team-head{
@@ -274,6 +262,15 @@
 		}
 		
 	}
+	.button-collapse{
+			display: block;
+			font-size: 25px;
+			line-height: 70px;
+			span{
+				color: #fff;
+				font-size: 35px;
+			}
+		}
 }
 
 /* Portrait phones and smaller */
@@ -342,29 +339,18 @@
 		}
 	}
 	header{
-		height: 70px;
-		padding:0px 20px;
+		height: auto;
+		padding:15px 0px;
 		i{
-			text-align: left;
-			line-height: 70px;
+			text-align: center;
 			img{
 				display: block;
-				height: 50px;
+				height: 85px;
 				width: auto;
-				float: left;
 				margin-top: 10px;
 			}
 		}
-		.button-collapse{
-			display: block;
-			float: right;
-			font-size: 25px;
-			line-height: 70px;
-			span{
-				color: #333;
-				font-size: 35px;
-			}
-		}
+		
 	}
 	.team{
 		.team-head{
@@ -409,5 +395,14 @@
 			padding-top: 20px!important;
 		}
 	}
+	.button-collapse{
+			display: block;
+			font-size: 25px;
+			line-height: 70px;
+			span{
+				color: #fff;
+				font-size: 35px;
+			}
+		}
 
 }

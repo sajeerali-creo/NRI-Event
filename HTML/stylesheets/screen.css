@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 5, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, C:/Users/Creotopi/Desktop/compass.app/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -286,8 +286,9 @@ header i img {
 header .circle {
   background-color: #fff;
 }
-/* line 19, ../sass/layout/_header.scss */
-header .button-collapse {
+
+/* line 21, ../sass/layout/_header.scss */
+.button-collapse {
   display: none;
 }
 
@@ -574,19 +575,35 @@ footer .newsl button a {
 .service .s-box .box-service {
   width: 33.33%;
   float: left;
-  height: 160px;
+  height: 200px;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+/* line 91, ../sass/layout/Pages/_home.scss */
+.service .s-box .box-service img {
+  width: 100%;
+  height: auto;
+}
+/* line 95, ../sass/layout/Pages/_home.scss */
+.service .s-box .box-service .over-btx {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
   padding: 15px;
+  position: absolute;
+  z-index: 6;
   transition: all 0.5s ease;
 }
-/* line 90, ../sass/layout/Pages/_home.scss */
-.service .s-box .box-service:hover {
-  background-color: #E71D36;
+/* line 103, ../sass/layout/Pages/_home.scss */
+.service .s-box .box-service .over-btx:hover {
+  background-color: rgba(231, 29, 54, 0.42);
 }
-/* line 92, ../sass/layout/Pages/_home.scss */
-.service .s-box .box-service:hover p {
+/* line 105, ../sass/layout/Pages/_home.scss */
+.service .s-box .box-service .over-btx:hover p {
   color: #fff !important;
 }
-/* line 96, ../sass/layout/Pages/_home.scss */
+/* line 112, ../sass/layout/Pages/_home.scss */
 .service .s-box .box-service .circle {
   width: 45px;
   height: 45px;
@@ -601,12 +618,12 @@ footer .newsl button a {
   float: left;
   margin-right: 10px;
 }
-/* line 110, ../sass/layout/Pages/_home.scss */
+/* line 126, ../sass/layout/Pages/_home.scss */
 .service .s-box .box-service .text {
   width: calc(100% - 55px);
   float: left;
 }
-/* line 113, ../sass/layout/Pages/_home.scss */
+/* line 129, ../sass/layout/Pages/_home.scss */
 .service .s-box .box-service .text h2 {
   font-size: 18px;
   font-weight: 400;
@@ -614,7 +631,7 @@ footer .newsl button a {
   padding-bottom: 10px;
   margin-top: 10px;
 }
-/* line 120, ../sass/layout/Pages/_home.scss */
+/* line 136, ../sass/layout/Pages/_home.scss */
 .service .s-box .box-service .text p {
   line-height: 20px;
   color: #999;
@@ -625,11 +642,11 @@ footer .newsl button a {
   -webkit-box-orient: vertical;
 }
 
-/* line 136, ../sass/layout/Pages/_home.scss */
+/* line 152, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content {
   padding: 20px;
 }
-/* line 138, ../sass/layout/Pages/_home.scss */
+/* line 154, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content h2 {
   font-size: 25px;
   font-weight: 400;
@@ -638,20 +655,20 @@ footer .newsl button a {
   padding-bottom: 30px;
   padding-top: 60px;
 }
-/* line 145, ../sass/layout/Pages/_home.scss */
+/* line 161, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content h2 strong {
   color: #333;
   font-weight: bold;
   font-size: 45px;
 }
-/* line 151, ../sass/layout/Pages/_home.scss */
+/* line 167, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content p {
   font-size: 14px;
   color: #999;
   text-align: left;
   line-height: 20px;
 }
-/* line 157, ../sass/layout/Pages/_home.scss */
+/* line 173, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content button {
   height: 40px;
   background-color: #fff;
@@ -666,24 +683,24 @@ footer .newsl button a {
   transition: all 0.5s ease;
   border: 2px solid #333;
 }
-/* line 170, ../sass/layout/Pages/_home.scss */
+/* line 186, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content button a {
   color: #333;
   text-align: center;
   display: block;
   font-weight: 600;
 }
-/* line 176, ../sass/layout/Pages/_home.scss */
+/* line 192, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content button:hover {
   background-color: #E71D36;
   color: #fff;
   border: 2px solid #E71D36;
 }
-/* line 180, ../sass/layout/Pages/_home.scss */
+/* line 196, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .content button:hover a {
   color: #fff;
 }
-/* line 186, ../sass/layout/Pages/_home.scss */
+/* line 202, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 {
   background-color: #fff;
   height: 250px;
@@ -691,7 +708,7 @@ footer .newsl button a {
   padding: 0px !important;
   position: relative;
 }
-/* line 192, ../sass/layout/Pages/_home.scss */
+/* line 208, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 .over {
   width: 100%;
   height: 100%;
@@ -710,29 +727,29 @@ footer .newsl button a {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 );
   /* IE6-9 */
 }
-/* line 206, ../sass/layout/Pages/_home.scss */
+/* line 222, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 .over:hover {
   background-color: rgba(231, 29, 54, 0.61);
   cursor: pointer;
 }
-/* line 211, ../sass/layout/Pages/_home.scss */
+/* line 227, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 img {
   min-width: 100%;
   object-fit: cover;
 }
-/* line 215, ../sass/layout/Pages/_home.scss */
+/* line 231, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 .text-box {
   position: absolute;
   bottom: 20px;
 }
-/* line 218, ../sass/layout/Pages/_home.scss */
+/* line 234, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 .text-box h2 {
   color: #fff;
   font-size: 16px;
   padding-bottom: 5px;
   font-weight: 600;
 }
-/* line 224, ../sass/layout/Pages/_home.scss */
+/* line 240, ../sass/layout/Pages/_home.scss */
 .upcoming-pro .m6 .text-box span {
   color: rgba(255, 255, 255, 0.61);
   font-size: 13px;
@@ -740,20 +757,20 @@ footer .newsl button a {
   display: block;
 }
 
-/* line 236, ../sass/layout/Pages/_home.scss */
+/* line 252, ../sass/layout/Pages/_home.scss */
 .team h2 {
   font-size: 25px;
   color: #333;
   display: block;
   padding-bottom: 30px;
 }
-/* line 241, ../sass/layout/Pages/_home.scss */
+/* line 257, ../sass/layout/Pages/_home.scss */
 .team h2 strong {
   font-size: 25px;
   color: #333;
   font-weight: bold;
 }
-/* line 248, ../sass/layout/Pages/_home.scss */
+/* line 264, ../sass/layout/Pages/_home.scss */
 .team .team-head {
   width: 150px;
   height: 140px;
@@ -763,31 +780,31 @@ footer .newsl button a {
   position: relative;
   overflow: hidden;
 }
-/* line 256, ../sass/layout/Pages/_home.scss */
+/* line 272, ../sass/layout/Pages/_home.scss */
 .team .team-head img {
   width: 100%;
   height: auto;
 }
-/* line 261, ../sass/layout/Pages/_home.scss */
+/* line 277, ../sass/layout/Pages/_home.scss */
 .team .team-detail {
   width: calc(100% - 160px);
   float: left;
 }
-/* line 264, ../sass/layout/Pages/_home.scss */
+/* line 280, ../sass/layout/Pages/_home.scss */
 .team .team-detail h3 {
   font-size: 16px;
   font-weight: bold;
   color: #333;
   text-align: left;
 }
-/* line 270, ../sass/layout/Pages/_home.scss */
+/* line 286, ../sass/layout/Pages/_home.scss */
 .team .team-detail span {
   color: #666;
   font-size: 13px;
   display: block;
   padding-top: 5px;
 }
-/* line 276, ../sass/layout/Pages/_home.scss */
+/* line 292, ../sass/layout/Pages/_home.scss */
 .team .team-detail p {
   font-size: 13px;
   color: #999;
@@ -795,7 +812,7 @@ footer .newsl button a {
   padding-top: 15px;
   line-height: 20px;
 }
-/* line 285, ../sass/layout/Pages/_home.scss */
+/* line 301, ../sass/layout/Pages/_home.scss */
 .team button {
   height: 40px;
   background-color: #fff;
@@ -810,25 +827,25 @@ footer .newsl button a {
   transition: all 0.5s ease;
   border: 2px solid #333;
 }
-/* line 298, ../sass/layout/Pages/_home.scss */
+/* line 314, ../sass/layout/Pages/_home.scss */
 .team button a {
   color: #333;
   text-align: center;
   display: block;
   font-weight: 600;
 }
-/* line 304, ../sass/layout/Pages/_home.scss */
+/* line 320, ../sass/layout/Pages/_home.scss */
 .team button:hover {
   background-color: #E71D36;
   color: #fff;
   border: 2px solid #E71D36;
 }
-/* line 308, ../sass/layout/Pages/_home.scss */
+/* line 324, ../sass/layout/Pages/_home.scss */
 .team button:hover a {
   color: #fff;
 }
 
-/* line 315, ../sass/layout/Pages/_home.scss */
+/* line 331, ../sass/layout/Pages/_home.scss */
 .team-head:after {
   content: "\f207";
   font-family: Material-Design-Iconic-Font;
@@ -845,12 +862,12 @@ footer .newsl button a {
   line-height: 150px;
 }
 
-/* line 331, ../sass/layout/Pages/_home.scss */
+/* line 347, ../sass/layout/Pages/_home.scss */
 .dark {
   background-color: #333333;
 }
 
-/* line 334, ../sass/layout/Pages/_home.scss */
+/* line 350, ../sass/layout/Pages/_home.scss */
 .light {
   background-color: #505050;
 }
@@ -1216,36 +1233,23 @@ footer .newsl button a {
 
   /* line 76, ../sass/layout/Pages/_responsive.scss */
   header {
-    height: 70px;
+    height: auto;
     padding: 0px 20px;
+    padding: 15px 0px;
   }
-  /* line 79, ../sass/layout/Pages/_responsive.scss */
+  /* line 80, ../sass/layout/Pages/_responsive.scss */
   header i {
-    text-align: left;
-    line-height: 70px;
+    text-align: center;
   }
   /* line 82, ../sass/layout/Pages/_responsive.scss */
   header i img {
     display: block;
-    height: 50px;
+    height: 85px;
     width: auto;
-    float: left;
     margin-top: 10px;
   }
-  /* line 90, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse {
-    display: block;
-    float: right;
-    font-size: 25px;
-    line-height: 70px;
-  }
-  /* line 95, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse span {
-    color: #333;
-    font-size: 35px;
-  }
 
-  /* line 102, ../sass/layout/Pages/_responsive.scss */
+  /* line 92, ../sass/layout/Pages/_responsive.scss */
   .team .team-head {
     width: 80px;
     height: 80px;
@@ -1253,12 +1257,12 @@ footer .newsl button a {
     margin-bottom: 10px;
   }
 
-  /* line 109, ../sass/layout/Pages/_responsive.scss */
+  /* line 99, ../sass/layout/Pages/_responsive.scss */
   .team-detail {
     width: 100% !important;
   }
 
-  /* line 112, ../sass/layout/Pages/_responsive.scss */
+  /* line 102, ../sass/layout/Pages/_responsive.scss */
   .team-head:after {
     /* position: absolute; */
     font-size: 40px;
@@ -1270,137 +1274,135 @@ footer .newsl button a {
     line-height: 80px;
   }
 
-  /* line 123, ../sass/layout/Pages/_responsive.scss */
+  /* line 113, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 {
     height: 180px;
     margin-bottom: 5px;
   }
-  /* line 126, ../sass/layout/Pages/_responsive.scss */
+  /* line 116, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 h2 {
     padding-top: 20px !important;
   }
 
-  /* line 132, ../sass/layout/Pages/_responsive.scss */
+  /* line 122, ../sass/layout/Pages/_responsive.scss */
   .m-nu {
     display: none;
   }
 
-  /* line 135, ../sass/layout/Pages/_responsive.scss */
+  /* line 125, ../sass/layout/Pages/_responsive.scss */
   .inner {
     height: 160px;
+  }
+
+  /* line 128, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse {
+    display: block;
+    font-size: 25px;
+    line-height: 70px;
+  }
+  /* line 132, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse span {
+    color: #fff;
+    font-size: 35px;
   }
 }
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  /* line 143, ../sass/layout/Pages/_responsive.scss */
+  /* line 142, ../sass/layout/Pages/_responsive.scss */
   footer .f-logo {
     width: 100%;
   }
-  /* line 146, ../sass/layout/Pages/_responsive.scss */
+  /* line 145, ../sass/layout/Pages/_responsive.scss */
   footer .f-content {
     width: 100%;
   }
-  /* line 149, ../sass/layout/Pages/_responsive.scss */
+  /* line 148, ../sass/layout/Pages/_responsive.scss */
   footer .links {
     margin-left: 0px;
   }
-  /* line 152, ../sass/layout/Pages/_responsive.scss */
+  /* line 151, ../sass/layout/Pages/_responsive.scss */
   footer h2 {
     padding-left: 0px;
   }
-  /* line 155, ../sass/layout/Pages/_responsive.scss */
+  /* line 154, ../sass/layout/Pages/_responsive.scss */
   footer ul {
     margin-left: 0px;
   }
-  /* line 158, ../sass/layout/Pages/_responsive.scss */
+  /* line 157, ../sass/layout/Pages/_responsive.scss */
   footer .newsl {
     width: 94%;
   }
-  /* line 160, ../sass/layout/Pages/_responsive.scss */
+  /* line 159, ../sass/layout/Pages/_responsive.scss */
   footer .newsl input {
     margin-left: 0px;
     width: 94%;
   }
-  /* line 164, ../sass/layout/Pages/_responsive.scss */
+  /* line 163, ../sass/layout/Pages/_responsive.scss */
   footer .newsl button {
     right: 0px;
   }
 
-  /* line 170, ../sass/layout/Pages/_responsive.scss */
+  /* line 169, ../sass/layout/Pages/_responsive.scss */
   .service .s-box {
     margin-top: -15px;
   }
-  /* line 172, ../sass/layout/Pages/_responsive.scss */
+  /* line 171, ../sass/layout/Pages/_responsive.scss */
   .service .s-box .box-service {
     width: 100%;
   }
 
-  /* line 177, ../sass/layout/Pages/_responsive.scss */
+  /* line 176, ../sass/layout/Pages/_responsive.scss */
   .banner {
     height: auto;
     padding-bottom: 30px;
   }
-  /* line 180, ../sass/layout/Pages/_responsive.scss */
+  /* line 179, ../sass/layout/Pages/_responsive.scss */
   .banner p {
     width: 100%;
   }
-  /* line 183, ../sass/layout/Pages/_responsive.scss */
+  /* line 182, ../sass/layout/Pages/_responsive.scss */
   .banner .m-nu {
     display: none;
   }
 
-  /* line 187, ../sass/layout/Pages/_responsive.scss */
+  /* line 186, ../sass/layout/Pages/_responsive.scss */
   .each-padd {
     padding: 0px 0px;
   }
 
-  /* line 192, ../sass/layout/Pages/_responsive.scss */
+  /* line 191, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 {
     padding-top: 0px;
     display: inline-block;
   }
-  /* line 195, ../sass/layout/Pages/_responsive.scss */
+  /* line 194, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 strong {
     font-size: 25px;
     display: inline-block;
   }
-  /* line 199, ../sass/layout/Pages/_responsive.scss */
+  /* line 198, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 br {
     display: none;
   }
 
-  /* line 205, ../sass/layout/Pages/_responsive.scss */
+  /* line 204, ../sass/layout/Pages/_responsive.scss */
   header {
-    height: 70px;
-    padding: 0px 20px;
+    height: auto;
+    padding: 15px 0px;
   }
-  /* line 208, ../sass/layout/Pages/_responsive.scss */
+  /* line 207, ../sass/layout/Pages/_responsive.scss */
   header i {
-    text-align: left;
-    line-height: 70px;
+    text-align: center;
   }
-  /* line 211, ../sass/layout/Pages/_responsive.scss */
+  /* line 209, ../sass/layout/Pages/_responsive.scss */
   header i img {
     display: block;
-    height: 50px;
+    height: 85px;
     width: auto;
-    float: left;
     margin-top: 10px;
   }
-  /* line 219, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse {
-    display: block;
-    float: right;
-    font-size: 25px;
-    line-height: 70px;
-  }
-  /* line 224, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse span {
-    color: #333;
-    font-size: 35px;
-  }
 
-  /* line 231, ../sass/layout/Pages/_responsive.scss */
+  /* line 219, ../sass/layout/Pages/_responsive.scss */
   .team .team-head {
     width: 80px;
     height: 80px;
@@ -1408,12 +1410,12 @@ footer .newsl button a {
     margin-bottom: 10px;
   }
 
-  /* line 238, ../sass/layout/Pages/_responsive.scss */
+  /* line 226, ../sass/layout/Pages/_responsive.scss */
   .team-detail {
     width: 100% !important;
   }
 
-  /* line 241, ../sass/layout/Pages/_responsive.scss */
+  /* line 229, ../sass/layout/Pages/_responsive.scss */
   .team-head:after {
     /* position: absolute; */
     font-size: 40px;
@@ -1425,151 +1427,149 @@ footer .newsl button a {
     line-height: 80px;
   }
 
-  /* line 252, ../sass/layout/Pages/_responsive.scss */
+  /* line 240, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 {
     height: 180px;
     margin-bottom: 5px;
   }
-  /* line 255, ../sass/layout/Pages/_responsive.scss */
+  /* line 243, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 h2 {
     padding-top: 20px !important;
   }
 
-  /* line 261, ../sass/layout/Pages/_responsive.scss */
+  /* line 249, ../sass/layout/Pages/_responsive.scss */
   .padding-left {
     padding: 0 0.75rem !important;
   }
 
-  /* line 264, ../sass/layout/Pages/_responsive.scss */
+  /* line 252, ../sass/layout/Pages/_responsive.scss */
   .m-nu {
     display: none;
   }
 
-  /* line 267, ../sass/layout/Pages/_responsive.scss */
+  /* line 255, ../sass/layout/Pages/_responsive.scss */
   .inner {
     height: 160px;
   }
 
-  /* line 270, ../sass/layout/Pages/_responsive.scss */
+  /* line 258, ../sass/layout/Pages/_responsive.scss */
   .p-box {
     height: 180px;
   }
-  /* line 272, ../sass/layout/Pages/_responsive.scss */
+  /* line 260, ../sass/layout/Pages/_responsive.scss */
   .p-box h2 {
     padding-top: 20px !important;
+  }
+
+  /* line 265, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse {
+    display: block;
+    font-size: 25px;
+    line-height: 70px;
+  }
+  /* line 269, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse span {
+    color: #fff;
+    font-size: 35px;
   }
 }
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
-  /* line 282, ../sass/layout/Pages/_responsive.scss */
+  /* line 279, ../sass/layout/Pages/_responsive.scss */
   footer .f-logo {
     width: 100%;
   }
-  /* line 285, ../sass/layout/Pages/_responsive.scss */
+  /* line 282, ../sass/layout/Pages/_responsive.scss */
   footer .f-content {
     width: 100%;
   }
-  /* line 288, ../sass/layout/Pages/_responsive.scss */
+  /* line 285, ../sass/layout/Pages/_responsive.scss */
   footer .links {
     margin-left: 0px;
   }
-  /* line 291, ../sass/layout/Pages/_responsive.scss */
+  /* line 288, ../sass/layout/Pages/_responsive.scss */
   footer h2 {
     padding-left: 0px;
   }
-  /* line 294, ../sass/layout/Pages/_responsive.scss */
+  /* line 291, ../sass/layout/Pages/_responsive.scss */
   footer ul {
     margin-left: 0px;
   }
-  /* line 297, ../sass/layout/Pages/_responsive.scss */
+  /* line 294, ../sass/layout/Pages/_responsive.scss */
   footer .newsl {
     width: 94%;
   }
-  /* line 299, ../sass/layout/Pages/_responsive.scss */
+  /* line 296, ../sass/layout/Pages/_responsive.scss */
   footer .newsl input {
     margin-left: 0px;
     width: 94%;
   }
-  /* line 303, ../sass/layout/Pages/_responsive.scss */
+  /* line 300, ../sass/layout/Pages/_responsive.scss */
   footer .newsl button {
     right: 0px;
   }
 
-  /* line 309, ../sass/layout/Pages/_responsive.scss */
+  /* line 306, ../sass/layout/Pages/_responsive.scss */
   .service .s-box {
     margin-top: -15px;
   }
-  /* line 311, ../sass/layout/Pages/_responsive.scss */
+  /* line 308, ../sass/layout/Pages/_responsive.scss */
   .service .s-box .box-service {
     width: 100%;
   }
 
-  /* line 316, ../sass/layout/Pages/_responsive.scss */
+  /* line 313, ../sass/layout/Pages/_responsive.scss */
   .banner {
     height: auto;
     padding-bottom: 30px;
   }
-  /* line 319, ../sass/layout/Pages/_responsive.scss */
+  /* line 316, ../sass/layout/Pages/_responsive.scss */
   .banner p {
     width: 100%;
   }
-  /* line 322, ../sass/layout/Pages/_responsive.scss */
+  /* line 319, ../sass/layout/Pages/_responsive.scss */
   .banner .m-nu {
     display: none;
   }
 
-  /* line 326, ../sass/layout/Pages/_responsive.scss */
+  /* line 323, ../sass/layout/Pages/_responsive.scss */
   .each-padd {
     padding: 0px 0px;
   }
 
-  /* line 331, ../sass/layout/Pages/_responsive.scss */
+  /* line 328, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 {
     padding-top: 0px;
     display: inline-block;
   }
-  /* line 334, ../sass/layout/Pages/_responsive.scss */
+  /* line 331, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 strong {
     font-size: 25px;
     display: inline-block;
   }
-  /* line 338, ../sass/layout/Pages/_responsive.scss */
+  /* line 335, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .content h2 br {
     display: none;
   }
 
-  /* line 344, ../sass/layout/Pages/_responsive.scss */
+  /* line 341, ../sass/layout/Pages/_responsive.scss */
   header {
-    height: 70px;
-    padding: 0px 20px;
+    height: auto;
+    padding: 15px 0px;
   }
-  /* line 347, ../sass/layout/Pages/_responsive.scss */
+  /* line 344, ../sass/layout/Pages/_responsive.scss */
   header i {
-    text-align: left;
-    line-height: 70px;
+    text-align: center;
   }
-  /* line 350, ../sass/layout/Pages/_responsive.scss */
+  /* line 346, ../sass/layout/Pages/_responsive.scss */
   header i img {
     display: block;
-    height: 50px;
+    height: 85px;
     width: auto;
-    float: left;
     margin-top: 10px;
   }
-  /* line 358, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse {
-    display: block;
-    float: right;
-    font-size: 25px;
-    line-height: 70px;
-  }
-  /* line 363, ../sass/layout/Pages/_responsive.scss */
-  header .button-collapse span {
-    color: #333;
-    font-size: 35px;
-  }
 
-  /* line 370, ../sass/layout/Pages/_responsive.scss */
+  /* line 356, ../sass/layout/Pages/_responsive.scss */
   .team .team-head {
     width: 80px;
     height: 80px;
@@ -1577,12 +1577,12 @@ footer .newsl button a {
     margin-bottom: 10px;
   }
 
-  /* line 377, ../sass/layout/Pages/_responsive.scss */
+  /* line 363, ../sass/layout/Pages/_responsive.scss */
   .team-detail {
     width: 100% !important;
   }
 
-  /* line 380, ../sass/layout/Pages/_responsive.scss */
+  /* line 366, ../sass/layout/Pages/_responsive.scss */
   .team-head:after {
     /* position: absolute; */
     font-size: 40px;
@@ -1594,32 +1594,44 @@ footer .newsl button a {
     line-height: 80px;
   }
 
-  /* line 391, ../sass/layout/Pages/_responsive.scss */
+  /* line 377, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 {
     height: 180px;
     margin-bottom: 5px;
   }
-  /* line 394, ../sass/layout/Pages/_responsive.scss */
+  /* line 380, ../sass/layout/Pages/_responsive.scss */
   .upcoming-pro .m6 h2 {
     padding-top: 20px !important;
   }
 
-  /* line 400, ../sass/layout/Pages/_responsive.scss */
+  /* line 386, ../sass/layout/Pages/_responsive.scss */
   .padding-left {
     padding: 0 0.75rem !important;
   }
 
-  /* line 403, ../sass/layout/Pages/_responsive.scss */
+  /* line 389, ../sass/layout/Pages/_responsive.scss */
   .inner {
     height: 160px;
   }
 
-  /* line 406, ../sass/layout/Pages/_responsive.scss */
+  /* line 392, ../sass/layout/Pages/_responsive.scss */
   .p-box {
     height: 180px;
   }
-  /* line 408, ../sass/layout/Pages/_responsive.scss */
+  /* line 394, ../sass/layout/Pages/_responsive.scss */
   .p-box h2 {
     padding-top: 20px !important;
+  }
+
+  /* line 398, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse {
+    display: block;
+    font-size: 25px;
+    line-height: 70px;
+  }
+  /* line 402, ../sass/layout/Pages/_responsive.scss */
+  .button-collapse span {
+    color: #fff;
+    font-size: 35px;
   }
 }

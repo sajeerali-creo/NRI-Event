@@ -84,15 +84,31 @@
 		.box-service{
 			width: 33.33%;
 			float: left;
-			height: 160px;
-			padding:15px;
+			height: 200px;
 			transition: all 0.5s ease;
-			&:hover{
-				background-color:#E71D36;
-				p{
-					color: #fff!important;
+			position:relative;
+			overflow: hidden;
+			img{
+				width: 100%;
+				height: auto;
+			}
+			.over-btx{
+				width: 100%;
+				background:rgba(0, 0, 0, 0.7);
+				height: 100%;
+				padding:15px;
+				position:absolute;
+				z-index: 6;
+				transition: all 0.5s ease;
+				&:hover{
+					background-color:rgba(231, 29, 54, 0.42);
+					p{
+						color: #fff!important;
+					}
 				}
 			}
+
+			
 			.circle{
 				width: 45px;
 				height: 45px;
