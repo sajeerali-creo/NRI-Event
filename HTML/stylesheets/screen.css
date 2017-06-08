@@ -171,39 +171,40 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
 }
 /* line 88, ../sass/layout/_base.scss */
 .white-box input, .white-box textarea {
-  font-size: 13px !important;
-  border-bottom: 1px solid #f1f1f1 !important;
+  font-size: 14px !important;
+  color: #666 !important;
+  border-bottom: 1px solid #e1e1e1 !important;
 }
-/* line 92, ../sass/layout/_base.scss */
+/* line 93, ../sass/layout/_base.scss */
 .white-box h2 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
   padding-bottom: 20px;
 }
-/* line 98, ../sass/layout/_base.scss */
+/* line 99, ../sass/layout/_base.scss */
 .white-box h3 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
-/* line 103, ../sass/layout/_base.scss */
+/* line 104, ../sass/layout/_base.scss */
 .white-box h4 {
   font-size: 20px;
   font-weight: bold;
   color: #333;
 }
-/* line 108, ../sass/layout/_base.scss */
+/* line 109, ../sass/layout/_base.scss */
 .white-box i {
   font-style: italic;
   padding: 5px 0px 10px 0px;
   display: block;
 }
-/* line 113, ../sass/layout/_base.scss */
+/* line 114, ../sass/layout/_base.scss */
 .white-box ul {
   padding-bottom: 20px;
 }
-/* line 115, ../sass/layout/_base.scss */
+/* line 116, ../sass/layout/_base.scss */
 .white-box ul li {
   display: block;
   padding: 5px 0px;
@@ -215,23 +216,23 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
   padding-left: 15px;
   background-size: 8px;
 }
-/* line 127, ../sass/layout/_base.scss */
+/* line 128, ../sass/layout/_base.scss */
 .white-box p {
   display: block;
   font-size: 13px;
   line-height: 20px;
 }
-/* line 132, ../sass/layout/_base.scss */
+/* line 133, ../sass/layout/_base.scss */
 .white-box .row {
   margin-bottom: 0px !important;
 }
 
-/* line 137, ../sass/layout/_base.scss */
+/* line 138, ../sass/layout/_base.scss */
 .padding-right {
   padding-right: 0px !important;
 }
 
-/* line 141, ../sass/layout/_base.scss */
+/* line 142, ../sass/layout/_base.scss */
 .padding-left {
   padding-left: 0px !important;
 }
@@ -277,7 +278,7 @@ header i {
 /* line 8, ../sass/layout/_header.scss */
 header i img {
   display: block;
-  height: 85px;
+  height: 120px;
   width: auto;
   margin: 0px auto;
 }
@@ -942,7 +943,7 @@ footer .newsl button a {
 
 /* line 49, ../sass/layout/Pages/_project.scss */
 .project-banner {
-  height: 300px;
+  height: auto;
   background-color: #000;
   overflow: hidden;
   position: relative;
@@ -1102,7 +1103,7 @@ footer .newsl button a {
   padding: 20px;
   float: left;
   width: 100%;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e1e1e1;
 }
 /* line 18, ../sass/layout/Pages/_contact.scss */
 .conta-detail ul li i {
