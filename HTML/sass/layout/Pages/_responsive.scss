@@ -134,6 +134,11 @@
 			font-size: 35px;
 		}
 	}
+	.inner{
+		h1{
+			line-height: 50px;
+		}
+	}
 }
 
 /* Landscape phones and portrait tablets */
@@ -271,6 +276,11 @@
 				font-size: 35px;
 			}
 		}
+	.inner{
+		h1{
+			line-height: 50px;
+		}
+	}
 }
 
 /* Portrait phones and smaller */
@@ -403,6 +413,11 @@
 				color: #fff;
 				font-size: 35px;
 			}
+	}
+	.inner{
+		h1{
+			line-height: 50px;
 		}
+	}
 
 }
